@@ -1,0 +1,14 @@
+﻿---
+BasedOnStyle: LLVM
+AlwaysBreakTemplateDeclarations: 'true'
+AllowShortBlocksOnASingleLine: 'false'
+AllowShortFunctionsOnASingleLine: InlineOnly
+AllowShortIfStatementsOnASingleLine: 'true'
+AllowShortLoopsOnASingleLine: 'true'
+BreakConstructorInitializers: BeforeComma
+ColumnLimit: '120'
+Cpp11BracedListStyle: 'true'
+IndentWidth: '4'
+NamespaceIndentation: All
+PointerAlignment: Left
+...
