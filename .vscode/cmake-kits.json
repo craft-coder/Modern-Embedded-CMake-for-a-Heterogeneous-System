@@ -2,5 +2,13 @@
     {
         "name": "Clang C++20",
         "toolchainFile": "submodules/polly/clang-cxx20.cmake"
+    },
+    {
+        "name": "GCC C++17 C11",
+        "toolchainFile": "submodules/polly/gcc-cxx17-c11.cmake"
+    },
+    {
+        "name": "Linux GCC armhf",
+        "toolchainFile": "submodules/polly/linux-gcc-armhf.cmake"
     }
 ]

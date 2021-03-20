@@ -1,6 +1,6 @@
 
 add_library(common_raw INTERFACE print.cpp)
-set_target_properties(common_raw PROPERTIES CXX_STANDARD 20
+set_target_properties(common_raw PROPERTIES CXX_STANDARD 17
                                             CXX_STANDARD_REQUIRED TRUE
                                             CXX_EXTENSIONS FALSE)
 
