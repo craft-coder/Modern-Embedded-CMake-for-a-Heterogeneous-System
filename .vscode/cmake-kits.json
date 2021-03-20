@@ -1,0 +1,6 @@
+[
+    {
+        "name": "Clang C++20",
+        "toolchainFile": "submodules/polly/clang-cxx20.cmake"
+    }
+]
