@@ -1,13 +1,11 @@
 cmake_minimum_required(VERSION 3.19)
 
 project(EmboExample LANGUAGES CXX)
+include(CTest)
 
 set(VARIANT "V1" CACHE STRING "The Variant to build this software project for")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-  set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_LIST_DIR}/installed-${VARIANT}" CACHE PATH "..." FORCE)
-endif()
 
 add_custom_target(allSystemA)
 add_custom_target(allSystemB)
