@@ -5,10 +5,13 @@ include(CMakePrintHelpers)
 include(CTest)
 
 set(VARIANT "V1" CACHE STRING "The Variant to build this software project for")
-cmake_print_variables(VARIANT)
-set(ignoreWarning "${CMAKE_TOOLCHAIN_FILE}")
-
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(ignoreWarning "${CMAKE_TOOLCHAIN_FILE}")
+if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+  set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_LIST_DIR}/installed-${VARIANT}" CACHE PATH "..." FORCE)
+endif()
+
+cmake_print_variables(VARIANT)
 
 add_custom_target(allSystemA)
 add_custom_target(allSystemB)
