@@ -15,7 +15,7 @@ void print(const std::string& message) {
     #else 
         std::cout << "Compiled for Undefined";
     #endif
-    std::cout << " - " << xstr(VARIANT) <<std::endl; 
+    std::cout << " - " << xstr(VARIANT) << std::endl; 
 
     std::cout << "Hello from \"" << message << "\"" <<std::endl; 
 

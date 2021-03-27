@@ -1,4 +1,3 @@
-
 add_library(CommonRaw INTERFACE)
 target_sources(CommonRaw INTERFACE print.cpp)
 target_compile_definitions(CommonRaw INTERFACE VARIANT=${VARIANT})

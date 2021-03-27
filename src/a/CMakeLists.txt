@@ -1,4 +1,3 @@
-
 add_library(ARaw INTERFACE a.cpp)
 target_compile_definitions(ARaw INTERFACE A)
 target_link_libraries(ARaw INTERFACE CommonRaw)

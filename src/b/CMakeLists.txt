@@ -1,4 +1,3 @@
-
 add_library(BRaw INTERFACE b.cpp)
 target_compile_definitions(BRaw INTERFACE B)
 target_link_libraries(BRaw INTERFACE CommonRaw)
