@@ -1,6 +1,8 @@
-#include <iostream>
+#include "print.hpp"
 
 int main() {
-    std::cout << "Hello from \"b tests\"" << std::endl;
-    return EXIT_SUCCESS;
+    
+    embo::print("TestsB");
+    
+    return 0;
 }

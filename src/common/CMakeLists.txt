@@ -1,7 +1,7 @@
 
-add_library(CommonRaw INTERFACE print.cpp)
-set_target_properties(CommonRaw PROPERTIES CXX_STANDARD 17
-                                            CXX_STANDARD_REQUIRED TRUE
-                                            CXX_EXTENSIONS FALSE)
+add_library(CommonRaw INTERFACE)
+target_sources(CommonRaw INTERFACE print.cpp)
+target_compile_definitions(CommonRaw INTERFACE VARIANT=${VARIANT})
+target_include_directories(CommonRaw INTERFACE ${CMAKE_CURRENT_LIST_DIR})
 
 add_subdirectory(tests)
