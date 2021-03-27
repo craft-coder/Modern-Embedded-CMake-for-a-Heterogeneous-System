@@ -1,14 +1,14 @@
 
-add_library(a_raw INTERFACE a.cpp)
-target_link_libraries(a_raw INTERFACE common_raw)
+add_library(ARaw INTERFACE a.cpp)
+target_link_libraries(ARaw INTERFACE CommonRaw)
 
-# add_library(a STATIC)
-# target_link_libraries(a PUBLIC a_raw)
+# add_library(EmbeddedA STATIC)
+# target_link_libraries(EmbeddedA PUBLIC ARaw)
 
-add_executable(a main.cpp)
-target_link_libraries(a PRIVATE a_raw)
-add_dependencies(allSystemA a)
-install(TARGETS a
+add_executable(EmbeddedA main.cpp)
+target_link_libraries(EmbeddedA PRIVATE ARaw)
+add_dependencies(allSystemA EmbeddedA)
+install(TARGETS EmbeddedA
         COMPONENT allSystemA)
 
 add_subdirectory(tests)

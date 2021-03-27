@@ -4,11 +4,11 @@ project(EmboExample LANGUAGES CXX)
 include(CMakePrintHelpers)
 include(CTest)
 
-set(VARIANT "V1" CACHE STRING "The Variant to build this software project for")
+set(VARIANT "Variant1" CACHE STRING "The Variant to build this software project for")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(ignoreWarning "${CMAKE_TOOLCHAIN_FILE}")
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-  set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_LIST_DIR}/installed-${VARIANT}" CACHE PATH "..." FORCE)
+  set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_LIST_DIR}/_installed/${VARIANT}" CACHE PATH "..." FORCE)
 endif()
 
 cmake_print_variables(VARIANT)

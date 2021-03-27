@@ -7,7 +7,7 @@ cd $CURRENT_DIRECTORY
 # Example script to build different variants #
 ##############################################
 
-for VARIANT in V1 V2
+for VARIANT in Variant1 Variant2
 do
     BUILD_KIT="GCC C++17 C11"
     printf "\n== ${BUILD_KIT} ==\n"

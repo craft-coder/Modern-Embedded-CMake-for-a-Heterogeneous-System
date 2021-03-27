@@ -1,5 +1,5 @@
 
-add_executable(b_tests main.cpp)
-target_link_libraries(b_tests b_raw)
-add_test(NAME b_tests COMMAND b_tests)
-add_dependencies(allTests b_tests)
+add_executable(TestsB main.cpp)
+target_link_libraries(TestsB BRaw)
+add_test(NAME TestsB COMMAND TestsB)
+add_dependencies(allTests TestsB)
