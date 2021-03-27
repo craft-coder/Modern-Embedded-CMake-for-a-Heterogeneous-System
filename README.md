@@ -9,7 +9,7 @@ To clone this repository (including the submodule) please use e.g.
 git clone --recurse-submodules https://github.com/craft-coder/Modern-Embedded-CMake-for-a-Heterogeneous-System
 ```
 
-## Usage
+## 🔨 Usage
 
 Check the `build.sh` script to get an overview of how to use this example project.
 This script
