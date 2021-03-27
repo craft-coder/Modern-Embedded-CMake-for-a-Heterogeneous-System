@@ -1,7 +1,5 @@
 # Directories
-build/
 _*/
-installed*/
 
 # VS Code stuff
 .vscode/c_cpp_properties.json
